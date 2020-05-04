@@ -99,15 +99,27 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" href="#" title="GitHub" target="_blank"><i class="icon-github"></i></a>
+					<a class="github" href="https://github.com/Ishmael-7" title="GitHub" target="_blank"><i class="icon-github"></i></a>
 				
-					<a class="gitee" href="#" title="gitee" target="_blank"><i class="icon-gitee"></i></a>
+					<a class="gitee" href="https://gitee.com/haruhi_suzumiya" title="gitee" target="_blank"><i class="icon-gitee"></i></a>
 				
-					<a class="jianshu" href="#" title="jianshu" target="_blank"><i class="icon-jianshu"></i></a>
+					<a class="qq" href="/img/2434387555.jpg" title="QQ" target="_blank"><i class="icon-qq"></i></a>
 				
-					<a class="cnblog" href="#" title="cnblog" target="_blank"><i class="icon-cnblog"></i></a>
+					<a class="bilibili" href="https://space.bilibili.com/8186915" title="bilibili" target="_blank"><i class="icon-bilibili"></i></a>
 				
 			</div>
+		
+			
+			
+			
+			
+			<div>
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="86" src="//music.163.com/outchain/player?type=2&id=441489898&auto=1&height=66"></iframe>
+			</div>
+			
+				
+				<p style="font-size: 12px;">Life Will Change!<p>
+			
 		
 		</nav>
 	</header>		
@@ -152,13 +164,13 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="GitHub"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/Ishmael-7" title="GitHub"><i class="icon-github"></i></a>
 			        
-						<a class="gitee" target="_blank" href="#" title="gitee"><i class="icon-gitee"></i></a>
+						<a class="gitee" target="_blank" href="https://gitee.com/haruhi_suzumiya" title="gitee"><i class="icon-gitee"></i></a>
 			        
-						<a class="jianshu" target="_blank" href="#" title="jianshu"><i class="icon-jianshu"></i></a>
+						<a class="qq" target="_blank" href="/img/2434387555.jpg" title="QQ"><i class="icon-qq"></i></a>
 			        
-						<a class="cnblog" target="_blank" href="#" title="cnblog"><i class="icon-cnblog"></i></a>
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/8186915" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
@@ -266,7 +278,7 @@
           <span class="tooltip-content">
             <span class="tooltip-text">
               <span class="tooltip-inner">
-                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢爸爸<i
                     class="icon icon-quo-right"></i></p>
                 <div class="reward-box">
                   
@@ -485,10 +497,10 @@
   var titleTime;
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+      document.title = "(つェ⊂) 等着你回来~ " + originTitle;
       clearTimeout(titleTime);
     } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+      document.title = "整活达人登场！(✪ω✪) " + originTitle;
       titleTime = setTimeout(function () {
         document.title = originTitle;
       }, 2000);
@@ -650,7 +662,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme">脑瘫大学生：<br>天津大学在读<br>重度网络依赖，ACG爱好者<br><br>联系QQ:1723245741<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
   	  	
     	</section>
     
@@ -737,6 +749,56 @@
   
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
+  
+    <script type="text/javascript" src="/plugins/live2d-widget.js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+  /**
+   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+   */
+  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
+    pluginRootPath = "/live2d_models/"; // 插件的路径，无需更改
+  //特定的模型json文件名称
+  var modelPathJson = {
+    "epsilon2_1": "Epsilon2.1",
+    "gf": "Gantzert_Felixander",
+    "haru/01": "haru01",
+    "haru/02": "haru02",
+    "nietzsche": "nietzche"
+  }
+
+  
+    var modelName = "hibiki";
+  
+
+  var modelJsonPath = "";
+  if (modelPathJson[modelName]) {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
+      ".model.json";
+  } else {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
+  }
+  L2Dwidget.init({
+    model: {
+      jsonPath: modelJsonPath
+    },
+    display: {
+       position: "right", 
+       width: 145, 
+       height: 315, 
+       hOffset: 50, 
+      
+    },
+    mobile: {
+       show: false, 
+       scale: 0.6 
+    },
+    react: {
+       opacity: 0.8 
+    }
+  })
+
+</script>
+
   
   
 </body>
